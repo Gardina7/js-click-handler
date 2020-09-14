@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mad-Libs</h1>
+<script>
+  // Here we are using the PROMPT function to get user input
+  // and then assign that user input to some variables.
+  //
+  // THINK ABOUT IT: If we're prompting a user for input,
+  // what TYPE of DATA might we be expecting?
+  let animal = prompt("CHINCHILLA");
+  let place = prompt("theUNDERVERSE");
+  let food = prompt("AVOCADOS");
+  //
+  // `document.body` allows us to access the BODY element on our page!
+  // `document.body.innerHTML` allows us to peek at the HTML contained
+  // within our BODY element.
+  //
+  // We can change the contents of BODY element by assigning to
+  // `document.body.innerHTML`.
+  //
+  // And, using the "addition assignment operator," we can CONCATENATE
+  // a new HTML string to the end of innerHTML, in order to show new
+  // content on the screen.
+  document.body.innerHTML += "Here is a story for you!<br>";
+  //
+  // JavaScript usually doesn't care how much whitespace we add between
+  // things. So, we could space things out like this, if it makes our code
+  // easier to read than (for example), one really long line.
+  //
+  // Notice that the following will work. Can you predict what it will do?
+  document.body.innerHTML +=
+    "The inconsiderate " +
+    animal +
+    " strode proudly through " +
+    place +
+    ", dropping " +
+    food +
+    " everywhere.";
+  //
+  // Try creating a new variable using a `let` statement,
+  // and assign to that new variable some user input, using the `prompt()`
+  // function you see us using at the top of this script.
+  // 
+  // Try experimenting with reassigning the BODY element's innerHTML,
+  // and see how it works.
+</script>
+</body>
+</html>
